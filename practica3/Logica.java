@@ -19,7 +19,7 @@ public class Logica {
             if (comando.matches("[0-9\\.]")) {
                 return entrada + comando;
 
-            } else if (comando.matches("[+\\-*/]")) {
+            } else if (comando.matches("[+\\-x÷]") {
                 numero1 = Integer.parseInt(entrada);
                 operacion = comando;
                 return "";
@@ -29,8 +29,8 @@ public class Logica {
                 switch (operacion) {
                     case "+" -> resultado = numero1 + numero2;
                     case "-" -> resultado = numero1 - numero2;
-                    case "*" -> resultado = numero1 * numero2;
-                    case "/" -> resultado = numero1 / numero2;
+                    case "x" -> resultado = numero1 * numero2;
+                    case "÷" -> resultado = numero1 / numero2;
                 }
                 return String.valueOf(resultado);
 
